@@ -1,0 +1,10 @@
+version: '3'
+services:
+  aws-tools:
+    build: .
+    command: tail -f /dev/null
+    volumes:
+      - $HOME/.aws:/root/.aws
+    environment:
+      AWS_DEFAULT_PROFILE: default
+      PS1: "aws-tool # "
