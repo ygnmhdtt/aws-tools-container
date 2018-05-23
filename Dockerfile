@@ -4,7 +4,7 @@ RUN apk --update add curl bash make && \
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
     python get-pip.py && \
     pip install -U pip && \
-    pip install awscli aws-shell
+    pip install awscli aws-shell awslogs
 
 ADD ./Makefile /root/Makefile
 
